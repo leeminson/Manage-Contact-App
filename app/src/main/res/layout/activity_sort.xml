@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SortActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sortContact"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_backToMain"
+            android:layout_width="46dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow_back"
+            tools:ignore="ContentDescription" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="46dp"
+            android:background="@android:color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sortMethod"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            />
+        <CheckBox
+            android:id="@+id/checkBoxSortByName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDes"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Sắp xếp theo tên"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxSortByLastName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBoxSortByName"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Sắp xếp theo họ"
+            tools:ignore="UnknownId" />
+
+        <Button
+            android:id="@+id/btnUnselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="106dp"
+            android:backgroundTint="#572E2E"
+            android:text="Bỏ chọn" />
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginBottom="106dp"
+            android:backgroundTint="#572E2E"
+            android:text="Áp dụng" />
+
+    </RelativeLayout>
+
+</LinearLayout>

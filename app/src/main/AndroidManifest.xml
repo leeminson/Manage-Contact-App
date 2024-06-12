@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/baseline_contact_phone_24"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ContactApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.FilterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SortActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddNoteActivity"
+            android:parentActivityName=".activity.NoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddContactActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.UpdateContactActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.ContactActivity" />
+        <activity
+            android:name=".activity.EditAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NoteDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.NoteActivity" />
+        <activity
+            android:name=".activity.NoteActivity"
+            android:exported="false"
+            android:label="@string/title_activity_note"
+            android:parentActivityName=".activity.ContactActivity"
+            android:theme="@style/Theme.ContactApp" />
+        <activity
+            android:name=".activity.ContactActivity"
+            android:exported="false"
+            android:label="@string/title_activity_contact"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/Theme.ContactApp" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".utils.AppointmentNotificationReceiver" />
+    </application>
+
+</manifest>

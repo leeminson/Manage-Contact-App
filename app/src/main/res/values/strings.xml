@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ContactApp</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="title_activity_note">NoteActivity</string>
+    <string name="ListAppointment">Danh sách lịch hẹn</string>
+    <string name="add">Thêm</string>
+    <string name="sortContact">Sắp xếp liên hệ</string>
+    <string name="sortMethod">Sắp xếp liên hệ theo :</string>
+    <string name="filterContact">"Phân loại liên hệ "</string>
+    <string name="filterMethod">Phân loại liên hệ theo :</string>
+    <string name="sort">"Sắp xếp "</string>
+    <string name="filter">"Phân loại "</string>
+</resources>

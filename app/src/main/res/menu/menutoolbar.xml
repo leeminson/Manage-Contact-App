@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting"
+        android:title="Cài đặt" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:title="Xóa" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/help"
+        android:title="Trợ giúp và phản hồi" />
+    <item
+        android:title="Chỉnh sửa"
+        android:id="@+id/modify"
+        android:icon="@drawable/pen"
+        app:showAsAction="always"
+        >
+
+    </item>
+</menu>
